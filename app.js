@@ -10,6 +10,9 @@ let snakeArr = [
 let food = { x: 4, y: 5 }
 let score = 0
 let highScore = localStorage.getItem('highscore')
+if(highScore===null){
+    highScore=0
+}
 hs.innerHTML = "High Score: " + highScore
 
 //game loop
